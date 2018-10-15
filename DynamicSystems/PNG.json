@@ -1,0 +1,88 @@
+{
+	"task_type": "openloop_control",
+	"area": [ ],
+	"sampling_type": "RK4",
+	"sampling_eps": 1e-1,
+	"sampling_max_steps": 125,
+	"ode": [
+		{
+			"component": "R",
+			"equation": "V_r"
+		},
+		{
+			"component": "V_r",
+			"equation": "((V_q ** 2) / R) + A_tr - A_m * sin(q - phi_m)"
+		},
+		{
+			"component": "q",
+			"equation": "V_q / R"
+		},
+		{
+			"component": "V_q",
+			"equation": "(N - 1) * ((V_q * V_r)/ R) + A_tq"
+		}
+	],
+	"initial_conditions": [
+		{"name": "R", "value": 40000},
+		{"name": "V_r", "value": -1403.1735411225036},
+		{"name": "q", "value": 0},
+		{"name": "V_q", "value": 280.2754058018734}
+	],
+	"controllers": [ ],
+	"control_bounds": [ ],
+	"auxiliary": [
+		{
+			"component": "phi_t",
+			"equation": "2.6179938779914944"
+		},
+		{
+			"component": "phi_m",
+			"equation": "0.08726646259971647"
+		},
+		{
+			"component": "V_t",
+			"equation": "700.0"
+		},
+		{
+			"component": "V_m",
+			"equation": "800.0"
+		},
+		{
+			"component": "A_t",
+			"equation": "-25.0"
+		},
+		{
+			"component": "N",
+			"equation": "4"
+		},
+		{
+			"component": "V_r",
+			"equation": "V_t * cos(phi_t - q) - V_m * cos(phi_m - q)"
+		},
+		{
+			"component": "A_tr",
+			"equation": "-A_t * sin(phi_t - q)"
+		},
+		{
+			"component": "A_tq",
+			"equation": "A_t * cos(phi_t - q)"
+		}
+	],
+	"efficiency": {
+		"integral": [
+			"0"
+		],
+		"terminal": "0"
+	},
+	"constraints": {
+		"terminal": [
+			{
+				"equation": "V_q",
+				"max_error": 10,
+				"penalty": [1.0, "explicit"],
+				"norm": "L2"
+			}
+		],
+		"phase": [ ]
+	}
+}
