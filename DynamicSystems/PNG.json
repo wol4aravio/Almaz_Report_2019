@@ -3,7 +3,7 @@
 	"area": [ ],
 	"sampling_type": "RK4",
 	"sampling_eps": 1e-1,
-	"sampling_max_steps": 125,
+	"sampling_max_steps": 1250,
 	"ode": [
 		{
 			"component": "R",
