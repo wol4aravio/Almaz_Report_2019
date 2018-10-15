@@ -1,0 +1,10 @@
+# Mac Specific
+
+.DS_Store
+
+# VS Code Specific
+
+.vscode
+
+# Notebooks
+.ipynb_checkpoints
