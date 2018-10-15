@@ -19,7 +19,7 @@
 		},
 		{
 			"component": "V_q",
-			"equation": "(N - 1) * ((V_q * V_r)/ R) + A_tq"
+			"equation": "(PNG_N - 1) * ((V_q * V_r)/ R) + A_tq"
 		}
 	],
 	"initial_conditions": [
@@ -40,24 +40,12 @@
 			"equation": "0.08726646259971647"
 		},
 		{
-			"component": "V_t",
-			"equation": "700.0"
-		},
-		{
-			"component": "V_m",
-			"equation": "800.0"
-		},
-		{
 			"component": "A_t",
 			"equation": "-25.0"
 		},
 		{
-			"component": "N",
+			"component": "PNG_N",
 			"equation": "4"
-		},
-		{
-			"component": "V_r",
-			"equation": "V_t * cos(phi_t - q) - V_m * cos(phi_m - q)"
 		},
 		{
 			"component": "A_tr",
@@ -70,15 +58,15 @@
 	],
 	"efficiency": {
 		"integral": [
-			"0"
+			"0.0"
 		],
-		"terminal": "0"
+		"terminal": "0.0"
 	},
 	"constraints": {
 		"terminal": [
 			{
 				"equation": "V_q",
-				"max_error": 10,
+				"max_error": 1,
 				"penalty": [1.0, "explicit"],
 				"norm": "L2"
 			}
