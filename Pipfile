@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+"osol.extremum" = "==1.0.0"
+numpy = "*"
+joblib = "*"
+bokeh = "*"
+tqdm = "*"
+
+[dev-packages]
+jupyter = "*"
+
+[requires]
+python_version = "3.6"
