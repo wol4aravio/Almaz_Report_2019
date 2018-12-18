@@ -4,14 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"osol.extremum" = "==1.0.0"
+"osol.extremum" = "==2.1.4"
+jupyter = "*"
 numpy = "*"
 joblib = "*"
-bokeh = "*"
+plotly = "*"
 tqdm = "*"
-
-[dev-packages]
-jupyter = "*"
 
 [requires]
 python_version = "3.6"
