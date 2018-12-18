@@ -1,0 +1,8 @@
+{
+  "state_variables": ["p", "q", "r"],
+  "aliases": {
+    "p0": "satellite.dp.y_start",
+    "q0": "satellite.dq.y_start",
+    "r0": "satellite.dr.y_start"
+  }
+}
