@@ -1,0 +1,10 @@
+# Mac Specific
+
+.DS_Store
+
+# PyCharm Specific
+
+.idea
+
+# Notebooks
+.ipynb_checkpoints
