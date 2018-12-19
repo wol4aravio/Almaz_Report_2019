@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "04c7c1b2542d5af82080586793690cee2cec43f994fa0eb5e9e2f2b7d4c10db8"
+            "sha256": "d0d57601242c88a735e72f90870f8c890de5e5afab0ca9c800468d69713afe55"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -318,11 +318,11 @@
         },
         "osol.extremum": {
             "hashes": [
-                "sha256:5fe4dd61bcb0835e6ece4b85c478076056a1ddc7fb808c840f789a6d7315b8c0",
-                "sha256:876a71b4ac3b91ecadd7eec65d12f702d949163f6de779a6be08c0fa3629728b"
+                "sha256:bba6b51a2ba1b8235774a9a741ffb349a722da4ab198e4f4668bbc81525f9426",
+                "sha256:ce2a4cdedc2f4ce288ef83f32fa79df3269926e92bd8d6fc63defca2a2a6d65f"
             ],
             "index": "pypi",
-            "version": "==2.1.4"
+            "version": "==2.1.5"
         },
         "pandocfilters": {
             "hashes": [
