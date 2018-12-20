@@ -10,6 +10,7 @@ numpy = "*"
 joblib = "*"
 plotly = "*"
 tqdm = "*"
+scipy = "*"
 
 [requires]
 python_version = "3.6"
